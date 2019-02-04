@@ -47,10 +47,12 @@ a:hover{
     text-decoration: underline;
 }
 #left{
-    align: left;
+    position: absolute;
+    left: 0px;
 }
 #right{
-    align: right;
+    position: absolute;
+    right: 0px;
 }
 /*img{
     width:25%;
