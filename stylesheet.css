@@ -1,0 +1,50 @@
+body{
+    background-color: #c8a2c8;
+}
+h1{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4em;
+}
+h2{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2em;
+}
+h4{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2em;
+}
+p{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2em;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+    
+}
+li{
+    text-decoration: none;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2em;
+
+}
+footer{
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: white;
+}
+.underline{
+    text-decoration: underline;
+}
+
+font-family: 'Handlee', cursive;
