@@ -46,5 +46,9 @@ a:hover{
 .underline{
     text-decoration: underline;
 }
+img{
+    width:25%;
+    height:25%;
+}
 
 font-family: 'Handlee', cursive;
