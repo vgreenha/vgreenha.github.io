@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>Student Weather Page</title>
   <meta name="Franklin Idaho Weather Page" content="Short Description of the page.">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=.43">
   <link  href='/weather/css/screen-franklin.css' rel='stylesheet' type="text/css" media="screen">
  </head>
  <body> 
         <header id="page-header">
-                <div id="logo">&#9748;</div>
-            <img src='/weather/images/plan-images/logo.jpeg' alt='Logo'>
+                <!--<div id="logo">&#9748;</div>-->
+            <img id='logo' src='/weather/images/plan-images/logo.jpeg' alt='Logo'>
                 <h1 id="site-brand">The Weather Site</h1>
                </header>
                <nav>
@@ -23,30 +23,31 @@
                </nav>
                <main>
                    <h1 id='locName'>Franklin, Idaho</h1>
-                   <section id="locInfo">Zip: 83237 | Elevation: 1514.246 ft. | Location: 42.07&#176; N, 111.79&#176; W</section>
+                   <section id="locInfo"><span>Zip:</span> 83237 | <span>Elevation:</span> 1514.246 ft. | <span>Location:</span> 42.07&#176; N, 111.79&#176; W</section>
                <div id='curWeather'>
                    <section id="temps" class="tile">
                    <h2>Temperature</h2>
-                    <p> 64&#176;F</p>
-                    <p> 41&#176;F &nbsp; 21&#176;F</p>
+                    <p class='temp'> 64&#176;F</p>
+                    <p> <span class='red'>41&#176;F</span> &nbsp; <span class='blue'>21&#176;F</span></p>
                     <p>Feels Like 40&#176;F</p>
                 </section>
                 <section id='wind' class="tile">
                     <h2>Wind</h2>
-                    <p>5</p>
-                    <img src='/weather/images/franklin-images/wind-pointer.png' alt='logo'>
-                    <p>Direction: sW</p>
-                    <p>Gusts: 10-12mph</p>
+                    <img id='windy' src='/weather/images/franklin-images/wind-pointer.png' alt='logo'>
+                    <p  id='overlay'>5</p>
+                    <p><span>Direction:</span> SW</p>
+                    <p><span>Gusts:</span> 10-12mph</p>
                 </section>
-                <section is='summary' class="tile">
+                <section id='summary' class="tile fill">
                     <h2>Rain</h2>
                     <p>Percipitation: 0 in</p>
-                    <img src='/weather/images/franklin-images/rain.jpg' alt='Image of the weather'>
+                    <img id='rain' src='/weather/images/franklin-images/rain.jpg' alt='Image of the weather'>
+
                 </section>
                 </div>
-                <section id='hourly'>
+                <section id='hourly' class='tile'>
                     <h2>Hourly Forecast</h2>
-                    <ul>
+                    <ul id='scroll'>
                         <li>10am: 41&#176;F</li>
                         <li>11am: 41&#176;F</li>
                         <li>12pm: 41&#176;F</li>

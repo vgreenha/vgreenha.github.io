@@ -19,8 +19,7 @@ html{
     box-sizing: inherit;
 }
 header{
-    background-color:#0e89d5;
-    
+    background-color:#0e89d5;      
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Sansita', 'eurostyle', sans-serif;
@@ -28,26 +27,101 @@ h1,h2,h3,h4,h5,h6{
 body{
     font-family: helvetica, verdana, sans-serif;
   font-size: 20px;
+  margin-bottom:100px
 }
 .tile{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
+    text-align: center;
+  }
+  #logo{
+    height: 92px;
+    align-content :middle;
   }
   nav ul li { 
     display: inline-block; 
     list-style: none; 
+    list-style-type: none;
+    align-content: center;    
+  }
+  li a{
+    text-decoration: none;
+    color: white;
+    margin:18pt;
   }
   nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color:#0e89d5;  
+    width: 100%;
+    align-content: center;
   }
   footer{
     margin-bottom: 2em;
    }
    #site-brand {
-    font-size: 2em;
+    font-size: 60pt;
     font-weight: 600;
+    border: 20px;
+    font-family:sans-serif;
   }
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+.temp{
+  font-size:55pt;
+}
+#locInfo{
+  font-size: .75em;
+}
+#locInfo>span{
+  font-weight: bold;
+}
+#locName{
+  font-size: 60pt;
+}
+#summary{
+  background-image: url(/weather/images/franklin-images/rain.jpg);
+
+}
+.fill{
+  object-fit: fill;
+}
+#rain{
+  width: 200px;
+  float: center;
+}
+ul {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#wind>p span{
+  font-weight: bold;
+}
+.windy{
+  position: relative;
+  text-align: center;
+  }
+  .windy>#overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+  }
+/* Section 3 - Mobile Rules */
+header>img{
+  float:left;
+}
