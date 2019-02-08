@@ -12,14 +12,35 @@
 
 
 /* Section 2 - General Rules */
+html{
+    box-sizing: border-box;
+}
+*, *:before. *:after{
+    box-sizing: inherit;
+}
 header{
     background-color:#0e89d5;
     
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Sansita', 'eurostyle', sans-serif;
 }
 body{
-    font-family: helvetica, arial, 'sans serif';
-    font-size: 1.5em;
+    font-family: helvetica, verdana, sans-serif;
+  font-size: 20px;
 }
+.tile{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+  nav ul li { 
+    display: inline-block; 
+    list-style: none; 
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }

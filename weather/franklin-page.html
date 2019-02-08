@@ -21,27 +21,29 @@
                 </ul>
                </nav>
                <main>
-                   <h1>Franklin, Idaho</h1>
-                   <h3>Zip: 83237 | Elevation: 1514.246 ft. | Location: 42.07&#176; N, 111.79&#176; W</h3>
-               <section>
+                   <h1 id='locName'>Franklin, Idaho</h1>
+                   <section id="locInfo">Zip: 83237 | Elevation: 1514.246 ft. | Location: 42.07&#176; N, 111.79&#176; W</section>
+               <div id='curWeather'>
+                   <section id="temps" class="tile">
                    <h2>Temperature</h2>
                     <p> 64&#176;F</p>
                     <p> 41&#176;F &nbsp; 21&#176;F</p>
                     <p>Feels Like 40&#176;F</p>
                 </section>
-                <section>
+                <section id='wind' class="tile">
                     <h2>Wind</h2>
                     <p>5</p>
                     <img src='/weather/images/franklin-images/wind-pointer.png' alt='logo'>
                     <p>Direction: sW</p>
                     <p>Gusts: 10-12mph</p>
                 </section>
-                <section>
+                <section is='summary' class="tile">
                     <h2>Rain</h2>
                     <p>Percipitation: 0 in</p>
                     <img src='/weather/images/franklin-images/rain.jpg' alt='Image of the weather'>
                 </section>
-                <section>
+                </div>
+                <section id='hourly'>
                     <h2>Hourly Forecast</h2>
                     <ul>
                         <li>10am: 41&#176;F</li>
