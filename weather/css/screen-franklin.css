@@ -36,9 +36,12 @@ body{
     border-radius: 15px;
     text-align: center;
   }
+  .image{
+    position: relative;
+  }
   #logo{
     height: 92px;
-    align-content :middle;
+    align-content: center;
   }
   nav ul li { 
     display: inline-block; 
@@ -61,6 +64,8 @@ body{
   }
   footer{
     margin-bottom: 2em;
+    background-color:#0e89d5;
+    
    }
    #site-brand {
     font-size: 60pt;
@@ -95,7 +100,7 @@ body{
 }
 #rain{
   width: 200px;
-  float: center;
+  text-align: center;
 }
 ul {
   overflow: auto;
@@ -115,7 +120,7 @@ ul li {
   position: relative;
   text-align: center;
   }
-  .windy>#overlay{
+  #overlay{
     position: absolute;
     top: 50%;
     left: 50%;  
