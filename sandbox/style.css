@@ -1,0 +1,18 @@
+/*mobile*/
+body{
+    background-color: yellow;
+}
+/*Larger Styles*/
+
+@media screen and (min-width: 700px){
+body { /*will have to work with both things*/
+    background-color: red;
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex-flow: row-reverse;
+}
+
+
+}

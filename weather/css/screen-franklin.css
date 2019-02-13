@@ -57,10 +57,10 @@ body{
   nav {
     position: fixed;
     bottom: 0;
-    left: 0;
+    justify-content: space-evenly;
     background-color:#0e89d5;  
     width: 100%;
-    align-content: center;
+    
   }
   footer{
     margin-bottom: 2em;
@@ -84,9 +84,6 @@ body{
 }
 #locInfo{
   font-size: .75em;
-}
-#locInfo>span{
-  font-weight: bold;
 }
 #locName{
   font-size: 60pt;
@@ -129,4 +126,11 @@ ul li {
 /* Section 3 - Mobile Rules */
 header>img{
   float:left;
+}
+dl{
+  display: flex;
+  flex-flow: row wrap;
+}
+dt{
+  font-weight: bold;
 }
