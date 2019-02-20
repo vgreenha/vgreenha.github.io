@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Sansita', 'eurostyle', sans-serif;
 }
 body{
+
     font-family: helvetica, verdana, sans-serif;
   font-size: 20px;
   margin-bottom:100px
@@ -36,10 +37,10 @@ body{
     border-radius: 15px;
     text-align: center;
   }
-  .image{
+.image{
     position: relative;
   }
-  #logo{
+#logo{
     height: 92px;
     align-content: center;
   }
@@ -65,85 +66,59 @@ body{
     border: 20px;
     font-family:sans-serif;
   }
-.red{
-  color: red;
-}
-.blue{
-  color: blue;
-}
-.temp{
-  font-size:55pt;
-}
-#locInfo{
-  font-size: .75em;
-}
-#locName{
-  font-size: 60pt;
-}
-#summary{
-  background-image: url(/weather/images/franklin-images/rain.jpg);
-
-}
-.fill{
-  object-fit: fill;
-}
-#rain{
-  width: 200px;
-  text-align: center;
-}
-ul {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-ul li { /*This is the hourly stuff at the bottom*/
-  display: inline-block;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-#wind>p span{
-  font-weight: bold;
-}
-.windy{
-  position: relative;
-  text-align: center;
+  .red{
+    color: red;
   }
-  #overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
+  .blue{
+    color: blue;
   }
-/* Section 3 - Mobile Rules */
-header>img{
-  float:left;
-}
-dl{
-  display: flex;
-  flex-flow: row wrap;
-}
-dt{
-  font-weight: bold;
-}
-nav { /*needs to move to mobile only*/
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  justify-content: space-evenly;
-  background-color:#0e89d5;  
-  width: 100%;
+  .temp{
+    font-size:55pt;
+  }
+  #locInfo{
+    font-size: .75em;
+  }
+  #locName{
+    font-size: 60pt;
+  }
+  #summary{
+    background-image: url(/weather/images/franklin-images/rain.jpg);
   
-}
-
-/*Section 4- Larger Screen*/
-@media screen and (min-width: 700px){
- 
-nav{
+  }
+  .fill{
+    object-fit: fill;
+  }
+  #rain
+  {
+    width: 200px;
+    justify-content: center;
+  }
+  ul li { /*This is the hourly stuff at the bottom*/
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  ul {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #wind{
+    background-image: url(/weather/images/franklin-images/wind-pointer.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+  #wind>p span{
+    font-weight: bold;
+  }
   
-}
+    #overlay{
+      position: absolute;
+      top: 40%;
+      left: 48%;  
+    }
+  
 
 
-
-
-}
+  /* section 3- Larger Screen */
+  @media screen and (min-width: 700px){
