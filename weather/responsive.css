@@ -1,0 +1,16 @@
+@media (max-width: 799px){
+    .size_800{
+        visibility: hidden;
+    }
+    .size_040{
+        visibility: visible;
+    }
+}
+@media (min-width: 800px){
+    .size_800{
+        visibility: visible;
+    }
+    .size_400{
+        visibility: hidden;
+    }
+}
