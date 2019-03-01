@@ -37,9 +37,10 @@ body{
     border-radius: 15px;
     text-align: center;
   }
-.image{
+/* .image{
     position: relative;
-  }
+    margin-bottom:50px;
+  } */
 #logo{
     height: 92px;
     align-content: center;
@@ -104,20 +105,27 @@ body{
     white-space: nowrap;
   }
   #wind{
-    background-image: url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
-    background-repeat: no-repeat;
-    background-position: center; 
+   
+    
+    /* z-index:100; */
+   
+  }
+  #dial{
+    height: 180px;
+    width: 170px;
+    background: no-repeat center url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
+    z-index: 90;
+    margin: -.6em auto 0;
   }
   #wind>p span{
     font-weight: bold;
   }
   
     #overlay{
-      position: absolute;
-      top: 40%;
-      left: 48%;  
+      position: relative;
+     z-index:100;
     }
-  
+
 
 
   /* section 3- Larger Screen */

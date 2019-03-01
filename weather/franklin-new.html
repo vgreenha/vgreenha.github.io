@@ -38,14 +38,16 @@
                                 <h2>Temperature</h2>
                                     <p class='temp'> 64&#176;F</p>
                                     <p> <span class='red'>41&#176;F</span> &nbsp; <span class='blue'>21&#176;F</span></p>
-                                    <p>Feels Like <span id='temp-numb'>40</span>&#176;F</p>
+                                    <p>Feels Like <span id='feelTemp'></span>&#176;F</p>
                             </section>
                             <section id='wind' class="tile">
                                 <h2>Wind</h2>
-                                    <div class='image'>
+                                    
+                                    <div id="dial" class="nw"></div>
+                                    <div>
                                         <!-- <img id='windy' src='/weather/images/franklin-images/wind-pointer.png' alt='logo'> -->
                                         <p  id='overlay'>5 mph</p>
-                                        </div>
+                                    </div>
                                         <p><span>Direction:</span> SW</p>
                                     <p><span>Gusts:</span> 10-12mph</p>
                             </section>
@@ -78,5 +80,6 @@
         <footer>
         &copy;2019 &mdash; The Weather Site
         </footer>  
+        <script src="/weather/js/functions.js"></script>
  </body>
 </html>
