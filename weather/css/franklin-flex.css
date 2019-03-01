@@ -36,6 +36,7 @@ body{
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
+    
   }
 /* .image{
     position: relative;
@@ -45,11 +46,15 @@ body{
     height: 92px;
     align-content: center;
   }
+  nav{
+    background-color:#0e89d5;
+  }
   nav ul li { 
     display: inline-block; 
     list-style: none; 
     list-style-type: none;
-    align-content: center;    
+    align-content: center; 
+      
   }
   li a{
     text-decoration: none;
@@ -84,7 +89,8 @@ body{
   }
   #summary{
     background-image: url(/weather/images/franklin-images/rain.jpg);
-  
+    /* width:30%; */
+    
   }
   .fill{
     object-fit: fill;
@@ -104,30 +110,67 @@ body{
     overflow: auto;
     white-space: nowrap;
   }
-  #wind{
-   
-    
-    /* z-index:100; */
-   
+   #wind{ 
+   display:flex;
+   flex-direction: column;
+  } 
+  
+  #temps{
+    /* width: 30% */
   }
-  #dial{
-    height: 180px;
-    width: 170px;
+
+  .dial{
+    
     background: no-repeat center url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
     z-index: 90;
     margin: -.6em auto 0;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    height:400px;
+    
   }
   #wind>p span{
     font-weight: bold;
   }
   
     #overlay{
-      position: relative;
+      
+       position: relative;
      z-index:100;
     }
+#play
+{flex-grow: 2;
 
+}
 
 
   /* section 3- Larger Screen */
   @media screen and (min-width: 700px){
-  }
+  
+    nav{
+     position: absolute;
+     top: 242px;
+     width:100%;
+     /* display:flex;
+     flex-wrap: nowrap;
+     justify-content: space-between; */
+   }
+   #curWeather{
+     display: flex;
+     flex-flow: row;
+     flex-wrap: nowrap;
+     /* justify-content: space-evenly; */
+ 
+   }
+ .dial{
+   width:100%;
+     padding: 0 125px;
+ }
+ .tile{
+   padding: 0 125px;
+     width: 100%
+ }
+ }

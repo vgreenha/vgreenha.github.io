@@ -5,9 +5,9 @@
 
 const temp = 31;
 const speed = 5;
-phrase //from page
+// phrase //from page
 buildWC(speed, temp);
-let condition = getCondition(phrase); //condition will be passed to the next function
+// let condition = getCondition(phrase); //condition will be passed to the next function
 
 //calculate windchill function
 
