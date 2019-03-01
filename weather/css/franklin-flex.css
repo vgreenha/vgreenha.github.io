@@ -19,6 +19,9 @@ html{
     box-sizing: inherit;
 }
 header{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
     background-color:#0e89d5;      
 }
 h1,h2,h3,h4,h5,h6{
@@ -108,19 +111,15 @@ body{
   }
   ul {
     overflow: auto;
-    white-space: nowrap;
+    
   }
    #wind{ 
    display:flex;
    flex-direction: column;
   } 
-  
-  #temps{
-    /* width: 30% */
-  }
+
 
   .dial{
-    
     background: no-repeat center url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
     z-index: 90;
     margin: -.6em auto 0;
@@ -130,7 +129,6 @@ body{
     border-radius: 15px;
     text-align: center;
     height:400px;
-    
   }
   #wind>p span{
     font-weight: bold;
@@ -148,29 +146,5 @@ body{
 
 
   /* section 3- Larger Screen */
-  @media screen and (min-width: 700px){
-  
-    nav{
-     position: absolute;
-     top: 242px;
-     width:100%;
-     /* display:flex;
-     flex-wrap: nowrap;
-     justify-content: space-between; */
-   }
-   #curWeather{
-     display: flex;
-     flex-flow: row;
-     flex-wrap: nowrap;
-     /* justify-content: space-evenly; */
- 
-   }
- .dial{
-   width:100%;
-     padding: 0 125px;
- }
- .tile{
-   padding: 0 125px;
-     width: 100%
- }
+ @media only screen and (min-width:700px){
  }
