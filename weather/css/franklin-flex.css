@@ -127,14 +127,9 @@ body{
 
   .dial{
     background: no-repeat center url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
-    z-index: 90;
+    height: 200px;
+    width: 200px;
     margin: -.6em auto 0;
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-    text-align: center;
-    height:400px;
   }
   #wind>p span{
     font-weight: bold;
