@@ -125,12 +125,14 @@ body{
   } 
 
 
-  .dial{
-    background: no-repeat center url(/weather/images/franklin-images/optimized/wind-pointer_op.png);
-    height: 200px;
-    width: 200px;
+  #dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/franklin-images/optimized/wind-pointer_op.png');
+    z-index: 100;
     margin: -.6em auto 0;
-  }
+    transform: rotate(90deg);
+   }
   #wind>p span{
     font-weight: bold;
   }

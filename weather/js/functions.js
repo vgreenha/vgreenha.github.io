@@ -6,11 +6,13 @@
 const temp = 31;
 const speed = 5;
 
-const direction ='NNE'; //set your own value
-windDial(direction);
+
 
 // phrase //from page
 buildWC(speed, temp);
+
+const direction = "S"; //Set your own value
+windDial(direction);
 
 // let condition = getCondition(phrase); //condition will be passed to the next function
 
@@ -37,53 +39,51 @@ buildWC(speed, temp);
 
                         }
 
-//Wind Dial Function
-
+// Wind Dial Function
 function windDial(direction){
-    //get the dial container
-
-    const dial= document.getElementById('dial');
+    // Get the container
+    const dial = document.getElementById("dial");
     console.log(direction);
     // Determine the dial class
- switch (direction){
-    case "North":
-    case "N":
-     dial.setAttribute("class", "n"); //"n" is the CSS rule selector
-     break;
-    case "NE":
-    case "NNE":
-    case "ENE":
-     dial.setAttribute("class", "ne");
-     break;
-    case "NW":
-    case "NNW":
-    case "WNW":
-     dial.setAttribute("class", "nw");
-     break;
-    case "South":
-    case "S":
-     dial.setAttribute("class", "s");
-     break;
-    case "SE":
-    case "SSE":
-    case "ESE":
-     dial.setAttribute("class", "se");
-     break;
-    case "SW":
-    case "SSW":
-    case "WSW":
-     dial.setAttribute("class", "sw");
-     break;
-    case "East":
-    case "E":
-     dial.setAttribute("class", "e");
-     break;
-    case "West":
-    case "W":
-     dial.setAttribute("class", "w");
-     break;
+    switch (direction){
+     case "North":
+     case "N":
+      dial.setAttribute("class", "n"); //"n" is the CSS rule selector
+      break;
+     case "NE":
+     case "NNE":
+     case "ENE":
+      dial.setAttribute("class", "ne");
+      break;
+     case "NW":
+     case "NNW":
+     case "WNW":
+      dial.setAttribute("class", "nw");
+      break;
+     case "South":
+     case "S":
+      dial.setAttribute("class", "s");
+      break;
+     case "SE":
+     case "SSE":
+     case "ESE":
+      dial.setAttribute("class", "se");
+      break;
+     case "SW":
+     case "SSW":
+     case "WSW":
+      dial.setAttribute("class", "sw");
+      break;
+     case "East":
+     case "E":
+      dial.setAttribute("class", "e");
+      break;
+     case "West":
+     case "W":
+      dial.setAttribute("class", "w");
+      break;
+    }
    }
-}
 
 
 
