@@ -33,14 +33,7 @@ body{
   font-size: 20px;
   margin-bottom:100px
 }
-.tile{
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-    text-align: center;
-    
-  }
+
 /* .image{
     position: relative;
     margin-bottom:50px;
@@ -124,15 +117,6 @@ body{
    flex-direction: column;
   } 
 
-
-  #dial {
-    height: 150px;
-    width: 150px;
-    background: no-repeat center/85% url('/weather/images/franklin-images/optimized/wind-pointer_op.png');
-    z-index: 100;
-    margin: -.6em auto 0;
-    transform: rotate(90deg);
-   }
   #wind>p span{
     font-weight: bold;
   }
@@ -140,13 +124,38 @@ body{
     #overlay{
       
        position: relative;
-     z-index:100;
+     z-index:90;
     }
 #play
 {flex-grow: 2;
 
 }
 
+.tile {
+  background-color : rgb(200 200 200 / 0.6);
+  border : solid 1px;
+  border-radius : 15px;
+  text-align : center;
+  }
+  
+  #dial {
+  position : relative;
+  height : 150px;
+  width : 150px;
+  background : url(/weather/images/franklin-images/optimized/wind-pointer_op.png) center /85% no-repeat;
+  z-index : 90;
+  margin : -0.6em auto 0;
+  transform: rotate(90deg);
+  }
+  
+  .centered {
+  position : relative;
+  margin : 0;
+  color : black;
+  }
+  #scroll{
+    overflow: scroll;
+  }
 
   /* section 3- Larger Screen */
  @media only screen and (min-width:700px){
