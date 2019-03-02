@@ -84,8 +84,16 @@ body{
     font-size:55pt;
   }
   #locInfo{
-    font-size: .75em;
+    font-weight: bold;
   }
+ 
+  dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+  }
+
   #locName{
     font-size: 60pt;
   }
@@ -145,7 +153,6 @@ body{
   background : url(/weather/images/franklin-images/optimized/wind-pointer_op.png) center /85% no-repeat;
   z-index : 90;
   margin : -0.6em auto 0;
-  transform: rotate(90deg);
   }
   
   .centered {
@@ -156,6 +163,16 @@ body{
   #scroll{
     overflow: scroll;
   }
+
+  /* Weather directions */
+.n{transform: rotate(0deg);}
+.ne{transform: rotate(45deg);}
+.e{transform: rotate(90deg);}
+.se{transform: rotate(1350deg);}
+.s{transform: rotate(180deg);} 
+.sw{transform: rotate(225deg);}
+.w{transform: rotate(270deg);}
+.nw{transform: rotate(315deg);}
 
   /* section 3- Larger Screen */
  @media only screen and (min-width:700px){
