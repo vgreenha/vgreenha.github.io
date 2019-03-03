@@ -2,19 +2,22 @@
 *  Weather Site JavaScript Functions
 ************************************* */
 //varibles for funtion use
-
 const temp = 31;
 const speed = 5;
-
-
-
-// phrase //from page
 buildWC(speed, temp);
 
-const direction = "S"; //Set your own value
+const direction = "SE"; //Set your own value
 windDial(direction);
 
-// let condition = getCondition(phrase); //condition will be passed to the next function
+const phrase = 'snow';
+let condition = getCondition(phrase); //condition will be passed to the next function
+let type = changeSummaryImage(condition);
+
+//meters infor
+let meters = 1400;
+let feet = convertMeters(meters);
+setElevation(feet)
+console.log('Elevation: '+ feet + 'ft.');
 
 //calculate windchill function
 
@@ -40,7 +43,7 @@ windDial(direction);
                         }
 
 // Wind Dial Function
-function windDial(direction){
+                        function windDial(direction){
     // Get the container
     const dial = document.getElementById("dial");
     console.log(direction);
@@ -83,31 +86,53 @@ function windDial(direction){
       dial.setAttribute("class", "w");
       break;
     }
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                         }
 
 
 //calculate meter function
-
-function getCondition(phrase) {
-    // have for each possible one
-    if(phrase.includes('cloud')||phrase.includes('overcast')||'Cloud'){
-        return "clouds";
+function convertMeters(meters){
+    let feet = meters * 3.2804;
+    feet = Math.round(feet);
+    return feet;
+}
+//will set page elevation
+function setElevation(feet){
+    document.getElementById('elevation').innerHTML = feet+'ft.';
     }
 
-}
+//image function
+
+function getCondition(phrase) {
+    console.log( 'condition is '+ phrase);
+    let condition = ""
+
+    // have for each possible one
+
+    if(phrase.includes('cloud')||phrase.includes('overcast')||phrase.includes('Cloud')){
+        condition = 'cloud';
+        return condition ;}
+    else if(phrase.includes('rain')||phrase.includes('wet')||phrase.includes('Rain')){
+        condition = 'rain';
+        return condition ;}
+    else if(phrase.includes('fog')||phrase.includes('haze')||phrase.includes('Fog')||phrase.includes('mist')){
+        condition = 'fog';
+        return condition ;}
+    else if(phrase.includes('snow')||phrase.includes('blizzard')||phrase.includes('snow')||phrase.includes('sleet')){
+        condition = 'snow';
+        return condition ;}
+    else{
+        condition = 'clear';
+        return condition
+         ;}                
+    }
 //next function will take from the retunr value one of the five
+
+//sum image function (weather type)
+
+function changeSummaryImage(condition){
+
+    document.getElementById('sumImg').setAttribute('class' , condition);
+     
+
+
+}

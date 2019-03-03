@@ -102,9 +102,9 @@ body{
     /* width:30%; */
     
   }
-  .fill{
+  /* .fill{
     object-fit: fill;
-  }
+  } */
   #rain
   {
     width: 200px;
@@ -163,12 +163,45 @@ body{
   #scroll{
     overflow: scroll;
   }
-
+  #curWeather{
+    background-size: cover;
+  }
+  /* Individual Rules for picture and size-background */
+.clear-s{
+  background-image:url(/weather/images/franklin-images/optimized/clear_400.jpg);
+}
+.clear{
+  background-image:url(/weather/images/franklin-images/optimized/clear_800.jpg);
+}
+.rain{
+  background-image:url(/weather/images/franklin-images/optimized/rain_400.jpg);
+}
+.rain{
+  background-image:url(/weather/images/franklin-images/optimized/rain_800.jpg);
+}
+.snow{
+  background-image:url(/weather/images/franklin-images/optimized/snow_400.jpg);
+}
+.snow{
+  background-image:url(/weather/images/franklin-images/optimized/snow_800.jpg);
+}
+.cloud{
+  background-image:url(/weather/images/franklin-images/optimized/clouds_400.jpg);
+}
+.cloud{
+  background-image:url(/weather/images/franklin-images/optimized/clear_800.jpg);
+}
+.fog-s{
+  background-image:url(/weather/images/franklin-images/optimized/fog_400.jpg);
+}
+.fog-l{
+  background-image:url(/weather/images/franklin-images/optimized/fog_800.jpg);
+}
   /* Weather directions */
 .n{transform: rotate(0deg);}
 .ne{transform: rotate(45deg);}
 .e{transform: rotate(90deg);}
-.se{transform: rotate(1350deg);}
+.se{transform: rotate(135deg);}
 .s{transform: rotate(180deg);} 
 .sw{transform: rotate(225deg);}
 .w{transform: rotate(270deg);}
