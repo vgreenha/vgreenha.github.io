@@ -2,16 +2,16 @@
 *  Weather Site JavaScript Functions
 ************************************* */
 //varibles for funtion use
-const temp = 31;
+const temp = 1;
 const speed = 5;
 buildWC(speed, temp);
 
-const direction = "SE"; //Set your own value
+const direction = "E"; //Set your own value
 windDial(direction);
 
 const phrase = 'snow';
 let condition = getCondition(phrase); //condition will be passed to the next function
-let type = changeSummaryImage(condition);
+let type = changeSummaryImage(getCondition(phrase));
 
 //meters infor
 let meters = 1400;
@@ -101,6 +101,8 @@ function setElevation(feet){
     }
 
 //image function
+//go through and make a switch statment to change the picture
+//make sure name changes as well
 
 function getCondition(phrase) {
     console.log( 'condition is '+ phrase);
