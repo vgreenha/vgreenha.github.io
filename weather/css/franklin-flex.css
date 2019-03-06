@@ -98,11 +98,16 @@ body{
     font-size: 60pt;
   }
   #summary{
-    background-image: url(/weather/images/franklin-images/rain.jpg);
-    /* width:30%; */
-    
+    height: 500px;
+  border : solid 1px;
+  border-radius : 15px;
+  text-align : center;
+  width: 100%;
+  background-size: cover;
+  align-self: center;
+  background-repeat:no-repeat;
   }
-  #sumImg{
+   #sumImg{
     width: 270px;
     height: 180px;
     background-size: contain;
@@ -178,13 +183,14 @@ body{
   background-image:url(/weather/images/franklin-images/optimized/clear_400.jpg);
 }
 .rain{
+  
   background-image:url(/weather/images/franklin-images/optimized/rain_400.jpg);
 }
 .snow{
   background-image:url(/weather/images/franklin-images/optimized/snow_400.jpg);
 }
 .cloud{
-  background-image:url(/weather/images/franklin-images/optimized/clouds_400.jpg);
+  background-image:url(/weather/images/franklin-images/optimized/cloud_400.jpg);
 }
 .fog{
   background-image:url(/weather/images/franklin-images/optimized/fog_400.jpg);
@@ -210,9 +216,10 @@ body{
     display: flex;
   }
   
-  .rain{
+  /* .rain{
+  
     background-image:url(/weather/images/franklin-images/optimized/rain_800.jpg);
-  }
+  } */
   .snow{
     background-image:url(/weather/images/franklin-images/optimized/snow_800.jpg);
   }
@@ -220,7 +227,7 @@ body{
     background-image:url(/weather/images/franklin-images/optimized/fog_800.jpg);
   }
   .cloud{
-    background-image:url(/weather/images/franklin-images/optimized/clear_800.jpg);
+    background-image:url(/weather/images/franklin-images/optimized/clouds_800.jpg);
   }
   .clear{
     background-image:url(/weather/images/franklin-images/optimized/clear_800.jpg);

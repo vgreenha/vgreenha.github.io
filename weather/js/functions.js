@@ -9,7 +9,7 @@ buildWC(speed, temp);
 const direction = "E"; //Set your own value
 windDial(direction);
 
-const phrase = 'rain';
+const phrase = 'clear';
 let condition = getCondition(phrase); //condition will be passed to the next function
 let type = changeSummaryImage(getCondition(phrase));
 
@@ -132,8 +132,8 @@ function getCondition(phrase) {
 function changeSummaryImage(phrase){
 
     document.getElementById('sumImg').setAttribute('class' , phrase);
-     
-
+    document.getElementById('summary').setAttribute('class' , phrase);
+    document.getElementById('weatherType').innerHTML = phrase;
 
 }
 
