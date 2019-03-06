@@ -9,7 +9,7 @@ buildWC(speed, temp);
 const direction = "E"; //Set your own value
 windDial(direction);
 
-const phrase = 'snow';
+const phrase = 'rain';
 let condition = getCondition(phrase); //condition will be passed to the next function
 let type = changeSummaryImage(getCondition(phrase));
 
@@ -19,7 +19,7 @@ let feet = convertMeters(meters);
 setElevation(feet)
 console.log('Elevation: '+ feet + 'ft.');
 
-//calculate windchill function
+//calculate windchill function---------works
 
                         function buildWC(speed, temp){
                         //input
@@ -42,7 +42,7 @@ console.log('Elevation: '+ feet + 'ft.');
 
                         }
 
-// Wind Dial Function
+// Wind Dial Function-------works
                         function windDial(direction){
     // Get the container
     const dial = document.getElementById("dial");
@@ -89,13 +89,13 @@ console.log('Elevation: '+ feet + 'ft.');
                          }
 
 
-//calculate meter function
+//calculate meter function-------works
 function convertMeters(meters){
     let feet = meters * 3.2804;
     feet = Math.round(feet);
     return feet;
 }
-//will set page elevation
+//will set page elevation--------works
 function setElevation(feet){
     document.getElementById('elevation').innerHTML = feet+'ft.';
     }
@@ -107,8 +107,6 @@ function setElevation(feet){
 function getCondition(phrase) {
     console.log( 'condition is '+ phrase);
     let condition = ""
-
-    // have for each possible one
 
     if(phrase.includes('cloud')||phrase.includes('overcast')||phrase.includes('Cloud')){
         condition = 'cloud';
@@ -127,14 +125,51 @@ function getCondition(phrase) {
         return condition
          ;}                
     }
-//next function will take from the retunr value one of the five
+//next function will take from the return value one of the five
 
 //sum image function (weather type)
 
-function changeSummaryImage(condition){
+function changeSummaryImage(phrase){
 
-    document.getElementById('sumImg').setAttribute('class' , condition);
+    document.getElementById('sumImg').setAttribute('class' , phrase);
      
 
 
 }
+
+
+
+//convert time to 12 hour format
+function format_time(hour){
+    if(hour>23){
+        hour -= 24;
+    }
+    let amPm = (hour > 11) ? 'pm': 'am';
+        if(hour> 12){
+            hour-= 12;
+        }
+    if(hour == 0){
+        hour ='12';
+    }
+    return Hour + amPm;
+
+}
+
+//Build the Hourly tempature list
+function buildHourlyData(nextHour,hourlyTemps) {
+    // Data comes from a JavaScript object of hourly temp name - value pairs
+    // Next hour should have a value between 0-23
+    // The hourlyTemps variable holds an array of temperatures
+    // Line 8 builds a list item showing the time for the next hour 
+    // and then the first element (value in index 0) from the hourly temps array
+     let hourlyListItems = '<li>' + format_time(nextHour) + ': ' + hourlyTemps[0] + '&deg;F</li>';
+     // Build the remaining list items using a for loop
+     for (let i = 1, x = hourlyTemps.length; i < x; i++) {
+      hourlyListItems += '<li>' + format_time(nextHour+i) + ': ' + hourlyTemps[i] + '&deg;F</li>';
+     }
+     console.log('HourlyList is: ' +hourlyListItems);
+     return hourlyListItems;
+    }
+    // Get the next hour based on the current time
+let date = new Date(); 
+let nextHour = date.getHours() + 1;
