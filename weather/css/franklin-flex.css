@@ -107,7 +107,7 @@ body{
     height: 180px;
     background-size: contain;
     align-self: center;
-    background-repeat:no-repeat:
+    background-repeat:no-repeat;
   }
   
   #rain
