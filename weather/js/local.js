@@ -96,49 +96,7 @@ function fetchData(weatherURL){
 
 
     //wind dial function
-                        // Get the container
-                        const dial = document.getElementById("dial");
-                        console.log(direction);
-                    //determines class
-                        switch (direction){
-                          case "North":
-                          case "N":
-                          dial.setAttribute("class", "n"); //"n" is the CSS rule selector
-                          break;
-                          case "NE":
-                          case "NNE":
-                          case "ENE":
-                          dial.setAttribute("class", "ne");
-                          break;
-                          case "NW":
-                          case "NNW":
-                          case "WNW":
-                          dial.setAttribute("class", "nw");
-                          break;
-                          case "South":
-                          case "S":
-                          dial.setAttribute("class", "s");
-                          break;
-                          case "SE":
-                          case "SSE":
-                          case "ESE":
-                          dial.setAttribute("class", "se");
-                          break;
-                          case "SW":
-                          case "SSW":
-                          case "WSW":
-                          dial.setAttribute("class", "sw");
-                          break;
-                          case "East":
-                          case "E":
-                          dial.setAttribute("class", "e");
-                          break;
-                          case "West":
-                          case "W":
-                          dial.setAttribute("class", "w");
-                          break;
-                        }
-
+             windDial(direction);
 
     // Set the current conditions information  
     let wet = getCondition(condit);
@@ -148,7 +106,23 @@ function fetchData(weatherURL){
     
 
     // Set the hourly temperature information
-    
+            console.log('Acessing array: value one= '+hourly);
+           let nextHour = nextH();
+            console.log('Next Hour is reading: '+ nextH());
+
+          // format_time(nextHour);
+          // console.log('Hour converter is reading: '+ format_time(nexthour));
+
+          //   buildHourlyData(nextHour,hourly);
+          //   console.log('Results from buildHourlyData: ' +buildHourlyData(nextHour,hourly));
+
+
+
+
+
+
+
+
 
     // Change the status of the containers
     mainContent.setAttribute('class', ''); // removes the hide class

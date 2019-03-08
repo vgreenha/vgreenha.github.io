@@ -151,7 +151,12 @@ function changeSummaryImage(phrase){
 
 }
 
-
+// Get the next hour based on the current time
+function nextH(){
+let date = new Date(); 
+let nextHour = date.getHours() + 1;
+return nextHour;
+}
 
 //convert time to 12 hour format
 function format_time(hour){
@@ -171,6 +176,8 @@ function format_time(hour){
 
 //Build the Hourly tempature list
 function buildHourlyData(nextHour,hourlyTemps) {
+    console.log('Next hour is '+ nextHour);
+    console.log('Hourly Temps= ' +hourlyTemps);
     // Data comes from a JavaScript object of hourly temp name - value pairs
     // Next hour should have a value between 0-23
     // The hourlyTemps variable holds an array of temperatures
