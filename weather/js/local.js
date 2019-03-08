@@ -38,15 +38,20 @@ function fetchData(weatherURL){
     console.log('fullName is: '+fullName);
 
     // Get the temperature data
-
+        let temp = g.Temp;
+        let high = g.High;
+        let low = g.Low;
+        
 
     // Get the wind data 
-
-
+        let wind = g.Wind;
+        let gusts = g.Gusts;
+        let direction = g.Direction;
     // Get the current conditions
-
+        let condit = g.Summary;
 
     // Get the hourly data 
+      let hourly = g.Hourly;
 
     // ************ Display the content ******************************
     // Set the title with the location name at the first
@@ -61,22 +66,89 @@ function fetchData(weatherURL){
 
     // Set the Location information
     // Get the h1 to display the city location
-    let contentHeading = document.getElementById('locName');
-    contentHeading.innerHTML = fullName;
+                      let contentHeading = document.getElementById('locName');
+                      contentHeading.innerHTML = fullName;
     // The h1 in main h1 should now say "Greenville, SC"
 
 
     // Set the temperature information
-
-
+                      document.getElementById('temp').innerHTML= temp;
+                      document.getElementById('high').innerHTML= "High: "+high;
+                      document.getElementById('low').innerHTML= 'Low: '+low;
     // Set the wind information
+                        let windx= wind + ' mph';
+                      document.getElementById('windx').innerHTML= windx;
+                      document.getElementById('gusts').innerHTML= "Gusts: " + gusts;
+                      document.getElementById('diret').innerHTML= 'Direction: ' + direction;
 
 
-    // Set the current conditions information
+   // Compute the windchill
+                  let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16);
+                  console.log(wc);
+                        //Round Windchill
+                        wc = Math.floor(wc);
+                        //if chill is greater the temp, return the temp
+                        wc = (wc > temp)?temp:wc;
+                        // Display the windchill in console
+                        console.log(wc);
+                        //Display on page
+                        document.getElementById('feelTemp').innerHTML = wc;
 
+
+    //wind dial function
+                        // Get the container
+                        const dial = document.getElementById("dial");
+                        console.log(direction);
+                    //determines class
+                        switch (direction){
+                          case "North":
+                          case "N":
+                          dial.setAttribute("class", "n"); //"n" is the CSS rule selector
+                          break;
+                          case "NE":
+                          case "NNE":
+                          case "ENE":
+                          dial.setAttribute("class", "ne");
+                          break;
+                          case "NW":
+                          case "NNW":
+                          case "WNW":
+                          dial.setAttribute("class", "nw");
+                          break;
+                          case "South":
+                          case "S":
+                          dial.setAttribute("class", "s");
+                          break;
+                          case "SE":
+                          case "SSE":
+                          case "ESE":
+                          dial.setAttribute("class", "se");
+                          break;
+                          case "SW":
+                          case "SSW":
+                          case "WSW":
+                          dial.setAttribute("class", "sw");
+                          break;
+                          case "East":
+                          case "E":
+                          dial.setAttribute("class", "e");
+                          break;
+                          case "West":
+                          case "W":
+                          dial.setAttribute("class", "w");
+                          break;
+                        }
+
+
+    // Set the current conditions information  
+    let wet = getCondition(condit);
+            console.log(getCondition(condit));
+                          changeSummaryImage(wet);
+
+    
 
     // Set the hourly temperature information
-
+    
 
     // Change the status of the containers
     mainContent.setAttribute('class', ''); // removes the hide class

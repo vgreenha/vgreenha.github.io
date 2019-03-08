@@ -43,8 +43,8 @@
                             <div id='box'>
                             <section id="temps" class="tile">
                                 <h2>Temperature</h2>
-                                    <p class='temp'> 64&#176;F</p>
-                                    <p> <span class='red'>41&#176;F</span> &nbsp; <span class='blue'>21&#176;F</span></p>
+                                    <p id='temp' class='tempx'> 64&#176;F</p>
+                                    <p> <span id='high' class='red'>41&#176;F</span> &nbsp; <span id='low' class='blue'>21&#176;F</span></p>
                                     <p>Feels Like <span id='feelTemp'></span>&#176;F</p>
                             </section>
                             <section id="wind" class="tile">
@@ -53,10 +53,10 @@
                 
                                 <div id="dial" class="nw"></div>
                                 <div class="centered">
-                                            <p>5 mph</p>
+                                            <p id='windx'>5 mph</p>
                                 </div>
-                                <p>Direction:E</p>
-                                <p>Gusts:10-12mph</p>
+                                <p id="diret">Direction:E</p>
+                                <p id= 'gusts'>Gusts:10-12mph</p>
                             </section>
                             <section id='summary' class="tile"> 
                                 <!-- change summary to have multipul classes to get the backgroiund gto change the picture -->
@@ -90,7 +90,7 @@
         &copy;2019 &mdash; The Weather Site
         </footer>  
         <!-- links js to page -->
-        <script src="/weather/js/functions.js"></script>
-        <script src="/weather/js/local.js"></script>
+        <script src="/weather/js/local.js"></script><script src="/weather/js/functions.js"></script>
+        
  </body>
 </html>

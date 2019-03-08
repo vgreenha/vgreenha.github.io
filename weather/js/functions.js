@@ -1,6 +1,10 @@
 /* *************************************
 *  Weather Site JavaScript Functions
 ************************************* */
+//function to fetch data
+
+
+
 //varibles for funtion use
 const temp = 1;
 const speed = 5;
@@ -9,9 +13,21 @@ buildWC(speed, temp);
 const direction = "E"; //Set your own value
 windDial(direction);
 
-const phrase = 'clear';
+const phrase = 'thunderstorm';
 let condition = getCondition(phrase); //condition will be passed to the next function
 let type = changeSummaryImage(getCondition(phrase));
+
+
+
+//getting phrase
+
+            // function getPhrase(input){
+            //     let direction = 
+
+            //     reutrn direction;
+            // }
+
+
 
 //meters infor
 let meters = 1400;
@@ -35,8 +51,7 @@ console.log('Elevation: '+ feet + 'ft.');
                         // If chill is greater than temp, return the temp
                         wc = (wc > temp)?temp:wc;
 
-                        // Display the windchill
-                        console.log(wc);
+                        
                         // wc = 'Feels like '+wc+'°F';
                         feelTemp.innerHTML = wc;
 
@@ -101,7 +116,6 @@ function setElevation(feet){
     }
 
 //image function
-//go through and make a switch statment to change the picture
 //make sure name changes as well
 
 function getCondition(phrase) {
@@ -111,7 +125,7 @@ function getCondition(phrase) {
     if(phrase.includes('cloud')||phrase.includes('overcast')||phrase.includes('Cloud')){
         condition = 'cloud';
         return condition ;}
-    else if(phrase.includes('rain')||phrase.includes('wet')||phrase.includes('Rain')){
+    else if(phrase.includes('rain')||phrase.includes('wet')||phrase.includes('Rain')||phrase.includes('Thunderstorm')||phrase.includes('Thunderstorms')){
         condition = 'rain';
         return condition ;}
     else if(phrase.includes('fog')||phrase.includes('haze')||phrase.includes('Fog')||phrase.includes('mist')){
@@ -170,6 +184,5 @@ function buildHourlyData(nextHour,hourlyTemps) {
      console.log('HourlyList is: ' +hourlyListItems);
      return hourlyListItems;
     }
-    // Get the next hour based on the current time
-let date = new Date(); 
-let nextHour = date.getHours() + 1;
+// Get the next hour based on the current time
+  

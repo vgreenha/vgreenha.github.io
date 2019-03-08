@@ -80,7 +80,7 @@ body{
   .blue{
     color: blue;
   }
-  .temp{
+  .tempx{
     font-size:55pt;
   }
   #locInfo{
@@ -122,8 +122,10 @@ body{
   }
   #hourly{
     height:150px;
+  }
+  #scroll{
     overflow: auto;
-
+    white-space: nowrap;
   }
   ul li { /*This is the hourly stuff at the bottom*/
     display: inline-block;
