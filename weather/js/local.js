@@ -106,18 +106,12 @@ function fetchData(weatherURL){
     
 
     // Set the hourly temperature information
-            console.log('Acessing array: value one= '+hourly);
-           let nextHour = nextH();
-            console.log('Next Hour is reading: '+ nextH());
-
-          // format_time(nextHour);
-          // console.log('Hour converter is reading: '+ format_time(nexthour));
-
-          //   buildHourlyData(nextHour,hourly);
-          //   console.log('Results from buildHourlyData: ' +buildHourlyData(nextHour,hourly));
+    let date = new Date();
+    let nextHour = date.getHours() + 1;
+    hourlyUL.innerHTML = buildHourlyData(nextHour, hourly);         
 
 
-
+        
 
 
 
