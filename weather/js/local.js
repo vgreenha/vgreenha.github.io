@@ -106,9 +106,9 @@ function fetchData(weatherURL){
     
 
     // Set the hourly temperature information
-    let date = new Date();
-    let nextHour = date.getHours() + 1;
-    hourlyUL.innerHTML = buildHourlyData(nextHour, hourly);         
+    // let date = new Date();
+    // let nextHour = date.getHours() + 1;
+    // scroll.innerHTML = buildHourlyData(nextHour, hourly);         
 
 
         
