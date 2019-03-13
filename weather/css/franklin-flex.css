@@ -124,7 +124,7 @@ body{
   #hourly{
     height:150px;
   }
-  #scroll{
+  .scroll{
     overflow: auto;
     white-space: nowrap;
   }
