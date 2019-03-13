@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+ </head>
+ <body>
+ <h1 id='this'>blah</h1>
+ 
+ <script>
+var header = document.getElementById('this');
+ siteData = {
+    siteName: 'My Site',
+    siteDescription: "my Random Site"},
+
+    // localData;
+    
+    localStorage.setItem('SiteData',JSON.stringify('siteData'));
+    
+    localData=JSON.parse(localStorage.getItem('siteData'));
+
+    // consloe.log(localData);
+    // consloe.log(localStorage.getItem('siteData'));
+
+    header.innerHTML = localData.siteName;
+
+
+
+ </script>
+ 
+ </body>
+ </html>
+

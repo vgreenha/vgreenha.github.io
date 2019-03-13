@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+ </head>
+ <body>
+ <h1>blah</h1>
+ 
+ <script>
+var header =document.getElementByTagName('h1')[0], siteData ={}
+ 
+ 
+ </body>
