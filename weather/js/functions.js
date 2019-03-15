@@ -17,18 +17,6 @@ const phrase = 'thunderstorm';
 let condition = getCondition(phrase); //condition will be passed to the next function
 let type = changeSummaryImage(getCondition(phrase));
 
-
-
-//getting phrase
-
-            // function getPhrase(input){
-            //     let direction = 
-
-            //     reutrn direction;
-            // }
-
-
-
 //meters infor
 let meters = 1400;
 let feet = convertMeters(meters);
@@ -146,7 +134,7 @@ function getCondition(phrase) {
 function changeSummaryImage(phrase){
 
     document.getElementById('sumImg').setAttribute('class' , phrase);
-    document.getElementById('summary').setAttribute('class' , phrase);
+    document.getElementById('box').setAttribute('class' , phrase);
     document.getElementById('weatherType').innerHTML = phrase;
 
 }

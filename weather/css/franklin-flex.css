@@ -103,9 +103,7 @@ body{
   border-radius : 15px;
   text-align : center;
   width: 100%;
-  background-size: cover;
-  align-self: center;
-  background-repeat:no-repeat;
+  
   }
    #sumImg{
     width: 270px;
@@ -219,7 +217,11 @@ body{
   }
   #box{
     display: flex;
+    background-size: cover;
+  align-self: center;
+  background-repeat:no-repeat;
   }
+ 
   
   /* .rain{
   
