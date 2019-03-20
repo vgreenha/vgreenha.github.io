@@ -34,7 +34,7 @@ var storage = window.localStorage;
                             console.log(`Lat and Long are: ${locale}.`);
 
                             // Call getLocation function, send locale
-                            getLocation(locale);
+             getLocation(locale);
 
                             //WERE ON THE GETLOCATION FUNCTION ACTIVITY
                         
@@ -50,7 +50,7 @@ var storage = window.localStorage;
 //end getGeoLocation
 
 // Gets location information from the NWS API
-                    function getLocation(locale) {
+            function getLocation(locale) {
                         const URL = "https://api.weather.gov/points/" + locale; 
                         // NWS User-Agent header (built above) will be the second parameter 
                         fetch(URL, idHeader) 
@@ -78,7 +78,7 @@ var storage = window.localStorage;
    } // end getLocation function
 
    // Gets weather station list and the nearest weather station ID from the NWS API
-                        function getStationId(stationsURL) { 
+                function getStationId(stationsURL) { 
                             // NWS User-Agent header (built above) will be the second parameter 
                             fetch(stationsURL, idHeader) 
                             .then(function(response){
@@ -108,7 +108,7 @@ var storage = window.localStorage;
    } // end getStationId function
 
    // Gets current weather information for a specific weather station from the NWS API
-                            function getWeather(stationId) { 
+                function getWeather(stationId) { 
                                 // This is the URL for current observation data 
                                 const URL = 'https://api.weather.gov/stations/' + stationId + '/observations/latest';
                                 // NWS User-Agent header (built above) will be the second parameter 

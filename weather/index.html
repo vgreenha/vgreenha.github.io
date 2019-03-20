@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+  <meta charset="UTF-8">
+  <title id ='pageTitle'> | The Weather Page</title>
+  <meta name="Greenville SC Weather Page" content="Short Description of the page.">
+  <meta name="viewport" content="width=device-width, initial-scale=.43">
+  <link  href='/weather/css/franklin-flex.css' rel='stylesheet' type="text/css" media="screen">
+ </head>
+ <!-- Who I worked with
+1. Kendrick Robinson
+2. Nicholas Wells
+
+
+-->
+ <body> 
+        <header id="page-header">
+                <!--<div id="logo">&#9748;</div>-->
+            <img id='logo' src='/weather/images/plan-images/logo.jpeg' alt='Logo with umbrella and rain drops'>
+                <h1 id="site-brand">The Weather Site</h1>
+        </header>
+            <nav id='pageNav'>
+                    <ul>
+                        <li><a href="#" title="Go to the Weather Site home page">Current Weather</a></li>
+                        <li><a href="#" title="Search the Site">Search</a></li>
+                        <li><a href="/weather/franklin-new.html" title="Go to the Weather Site Franklin Page">Franklin</a></li>
+                        <li><a href="/weather/greenville.html" title="Go to the Weather Site Greenville page">Greenville</a></li>
+                    </ul>
+            </nav>
+            <!-- holds place while data is being fetched -->
+<section id="statusMessage">Please be patient while I get your weather information.</section>
+
+
+
+
+            <main id= 'mainContent' class='hide' >
+                <h1 id='locName'>Franklin, Idaho</h1> <!--change this to a dt dl dd list strcture-->
+                    <section id="locInfo">
+                        <dl>
+                            <dt>Zip:</dt>
+                            <dd>83237</dd>
+                            <dt >Elevation:</dt> 
+                            <dd id='elevation'></dd>
+                            <dt>Location:</dt> 
+                            <dd>42.07&#176; N, 111.79&#176; W</dd>
+                        </dl>
+                    </section>
+                        <section id='curWeather'>
+                            <div id='box'>
+                            <section id="temps" class="tile">
+                                <h2>Temperature</h2>
+                                    <p id='temp' class='tempx'> 64&#176;F</p>
+                                    <p> <span id='high' class='red'>41&#176;F</span> &nbsp; <span id='low' class='blue'>21&#176;F</span></p>
+                                    <p>Feels Like <span id='feelTemp'></span>&#176;F</p>
+                            </section>
+                            <section id="wind" class="tile">
+
+                                <h3><strong>Wind</strong></h3>
+                
+                                <div id="dial" class="nw"></div>
+                                <div class="centered">
+                                            <p id='windx'>5 mph</p>
+                                </div>
+                                <p id="diret">Direction:E</p>
+                                <p id= 'gusts'>Gusts:10-12mph</p>
+                            </section>
+                            <section id='summary' class="tile"> 
+                                <!-- change summary to have multipul classes to get the backgroiund gto change the picture -->
+                                <h2 id="weatherType"></h2>
+                                <p>Percipitation: 0 in</p>
+                                <div id='sumImg' class='' ></div>
+                                        
+                            </section>
+                        </div>
+                        </section>
+                <section class='tile' >
+                    <h2>Hourly Forecast</h2>
+                    <ul id='hourlyUL' class='scroll'>
+                        <li>10am: 41&#176;F</li>
+                        <li>11am: 41&#176;F</li>
+                        <li>12pm: 41&#176;F</li>
+                        <li>1pm: 41&#176;F</li>
+                        <li>2pm: 41&#176;F</li>
+                        <li>3pm: 41&#176;F</li>
+                        <li>4pm: 42&#176;F</li>
+                        <li>5pm: 44&#176;F</li>
+                        <li>6pm: 44&#176;F</li>
+                        <li>7pm: 46&#176;F</li>
+                        <li>8pm: 49&#176;F</li>
+                        <li>9pm: 51&#176;F</li>
+                        <li>10pm: 55&#176;F</li>
+                    </ul>
+                </section>
+            </main>
+        <footer>
+        &copy;2019 &mdash; The Weather Site
+        </footer>  
+        <!-- links js to page -->
+        <script src="/weather/js/local.js"></script><script src="/weather/js/functions.js"></script>
+        
+ </body>
+</html>
