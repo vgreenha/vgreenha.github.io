@@ -35,14 +35,10 @@
             <main id= 'mainContent' class='hide' >
                 <h1 id='locName'>Franklin, Idaho</h1> <!--change this to a dt dl dd list strcture-->
                     <section id="locInfo">
-                        <dl>
-                            <dt>Zip:</dt>
-                            <dd>None</dd>
-                            <dt >Elevation:</dt> 
-                            <dd id='elevation'></dd>
-                            <dt>Location:</dt> 
-                            <dd>42.07&#176; N, 111.79&#176; W</dd>
-                        </dl>
+                        
+                       
+                            <p><strong>Zip:</strong> None | <strong>Elevation:</strong> <span id='elevation'></span> | <strong>Location:</strong> <span id='latLong'></span></p>
+
                     </section>
                         <section id='curWeather'>
                             <div id='box'>
@@ -50,18 +46,18 @@
                                 <h2>Temperature</h2>
                                     <p id='temp' class='tempx'> 64&#176;F</p>
                                     <p> <span id='high' class='red'>41&#176;F</span> &nbsp; <span id='low' class='blue'>21&#176;F</span></p>
-                                    <p>Feels Like <span id='feelTemp'></span>&#176;F</p>
+                                    <p>Feels Like <span id='feelTemp'></span></p>
                             </section>
                             <section id="wind" class="tile">
 
-                                <h3><strong>Wind</strong></h3>
+                                <h2><strong>Wind</strong></h2>
                 
                                 <div id="dial" class="nw"></div>
                                 <div class="centered">
                                             <p id='windx'>5 mph</p>
                                 </div>
                                 <p id="diret">Direction:E</p>
-                                <p id= 'gusts'>Gusts:10-12mph</p>
+                                <p>Gusts: <span id= 'gusts'> 10-12mph</span></p>
                             </section>
                             <section id='summary' class="tile"> 
                                 <!-- change summary to have multipul classes to get the backgroiund gto change the picture -->

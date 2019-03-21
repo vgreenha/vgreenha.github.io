@@ -29,6 +29,9 @@ getGeoLocation();
                             const lat = position.coords.latitude;
                             const long = position.coords.longitude;
                         
+                            // local storage
+                            storage.setItem('latitude', lat);
+                            storage.setItem('longitude', long);
                             // Combine the values
                             const locale = lat + "," + long;
                             console.log(`Lat and Long are: ${locale}.`);

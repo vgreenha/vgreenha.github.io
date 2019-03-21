@@ -27,6 +27,9 @@ header{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Sansita', 'eurostyle', sans-serif;
 }
+section h2{
+  font-size: 3em; 
+}
 body{
 
     font-family: helvetica, verdana, sans-serif;
@@ -95,7 +98,7 @@ body{
   }
 
   #locName{
-    font-size: 60pt;
+    font-size: 40pt;
   }
   #summary{
     height: 500px;
