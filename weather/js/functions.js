@@ -378,7 +378,7 @@ buildPage();
                         //Temps------ SHOULD BE DONE
 
                         let temp = storage.getItem('temperature');
-                        tempR =Math.round(((temp*9/5) +32 )); 
+                        tempR =Math.round((convertToFahrenheit(temp))); 
                         document.getElementById('temp').innerHTML= tempR + '&#176;' +'F';
 
                         let low = storage.getItem('low');
@@ -428,7 +428,11 @@ buildPage();
                         else{ longC = '&deg;W '}
 
                         document.getElementById('latLong').innerHTML = lat +latC+', ' +long +longC;
-                    
+                        //convert to F ---done within each function..... This is to show I know what I am doing....
+                        function convertToFahrenheit(c){
+                            let f = c * (9/5) + 32;
+                            return f;
+                        }
                         mainContent.setAttribute('class', ''); // removes the hide class
                         statusMessage.setAttribute('class', 'hide'); // hides the status container
                     }
