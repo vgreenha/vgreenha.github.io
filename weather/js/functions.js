@@ -209,6 +209,8 @@ function buildHourlyData(nextHour,hourlyTemps) {
 
        // Get link to forecast
        let forecastURL = data.properties.forecast;
+       console.log('look at this one Tori');
+       console.log(forecastURL);
        getForecast(forecastURL);
     
         // Next, get the weather station ID before requesting current conditions 
@@ -397,9 +399,18 @@ buildPage();
                         //Hourly temps-----SHOULD BE GOOOOOOOOOOOD
                         let date = new Date();
                         let nextHour = date.getHours() + 1;
-                        let hourlyData = storage.getItem('hourly');
-                        hourlyUL.innerHTML = (nextHour, hourlyData);
-                        console.log(hourlyUL.innerHTML = (nextHour, hourlyData));
+                        let hourlyStorage = storage.getItem('hourly');
+        //split & converts to an array
+                        let hourlyData = hourlyStorage.split(",");
+                        console.log('Hourly Array');
+                        console.log(hourlyData);
+        //send to houlr data
+                        hourlyUL.innerHTML = buildHourlyData(nextHour, hourlyData);
+
+        //cosloe to make sure it workds
+                        console.log(buildHourlyData(nextHour, hourlyData));
+
+                    
 
                         //WindCHill-------SHOULD BE GOOD
                         let speed = storage.getItem('windSpeed');
