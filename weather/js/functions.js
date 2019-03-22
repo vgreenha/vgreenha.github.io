@@ -120,7 +120,7 @@ function getCondition(phrase) {
     let condition = ""
 
     if(phrase.includes('cloud')||phrase.includes('overcast')||phrase.includes('Cloud')){
-        condition = 'cloud';
+        condition = 'Cloud';
         return condition ;}
     else if(phrase.includes('rain')||phrase.includes('wet')||phrase.includes('Rain')||phrase.includes('Thunderstorm')||phrase.includes('Thunderstorms')){
         condition = 'rain';
@@ -142,9 +142,12 @@ function getCondition(phrase) {
 
 function changeSummaryImage(phrase){
 
+    document.getElementById('weatherType').innerHTML = phrase;
+    //DO NOT TOUCH!!! Order matters and It keeps the 'C' capital on the web page, and lets the classes change for the sumImg.
+    phrase = phrase.toLowerCase();
     document.getElementById('sumImg').setAttribute('class' , phrase);
     document.getElementById('box').setAttribute('class' , phrase);
-    document.getElementById('weatherType').innerHTML = phrase;
+    
 
 }
 
