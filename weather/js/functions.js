@@ -123,16 +123,16 @@ function getCondition(phrase) {
         condition = 'Cloud';
         return condition ;}
     else if(phrase.includes('rain')||phrase.includes('wet')||phrase.includes('Rain')||phrase.includes('Thunderstorm')||phrase.includes('Thunderstorms')){
-        condition = 'rain';
+        condition = 'Rain';
         return condition ;}
     else if(phrase.includes('fog')||phrase.includes('haze')||phrase.includes('Fog')||phrase.includes('mist')){
-        condition = 'fog';
+        condition = 'Fog';
         return condition ;}
     else if(phrase.includes('snow')||phrase.includes('blizzard')||phrase.includes('snow')||phrase.includes('sleet')){
-        condition = 'snow';
+        condition = 'Snow';
         return condition ;}
     else{
-        condition = 'clear';
+        condition = 'Clear';
         return condition
          ;}                
     }
