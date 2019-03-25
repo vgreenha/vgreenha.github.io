@@ -283,7 +283,9 @@ function getWeather(stationId) {
         //set to local
         storage.setItem("temperature", temperature);
         storage.setItem("curWeather", curWeather);
-        storage.setItem("windGust", windGust);
+        
+
+
   
     
     }) 
@@ -344,12 +346,14 @@ function getHourly(hourlyLink){
                                 let low = data.properties.periods[1].temperature;
                                 let icon = data.properties.periods[0].icon;
                                 let detailedForecast = data.properties.periods[0].detailedForecast;
+                                let windGust = data.properties.periods[0].windSpeed;
 
                                 // Local storage
                                 storage.setItem("high", high);
                                 storage.setItem("low", low);
                                 storage.setItem("icon", icon);
                                 storage.setItem("detailedForecast", detailedForecast);
+                                storage.setItem("windGust", windGust);
                             })
                             .catch(error => console.log("There was a getForecast error: ", error))
                         }
@@ -392,6 +396,9 @@ buildPage();
                         let high = storage.getItem('high');
                         document.getElementById('high').innerHTML = high+ '&#176;' +'F';
 
+                        //try to get gusts
+                        let gustWind = storage.getItem('windGust');
+                        document.getElementById('gusts').innerHTML = gustWind;
 
                         //Meters to Feet ---SHOULD BE DONE
                             let eleva = storage.getItem('stationElevation');
