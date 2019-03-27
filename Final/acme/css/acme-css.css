@@ -1,0 +1,27 @@
+/*This is the stylesheet for the franklin weather site*/
+/* Table of COntents
+1. Imports
+2. General rules 
+3. Mobile first rulers
+4. Larger Screen rules  */
+
+
+/* Section 1- Imports */
+
+/* Section 2- General Rules */
+body{
+    background-image: '/acme/images/site/background.jpg';
+    background-repeat: no-repeat;
+    
+}
+/* Section 3- Mobile Only Rules */
+
+/* Section 4- Large screen Rules */
+@media only screen and (min-width:1400px){
+
+
+
+
+
+
+}
