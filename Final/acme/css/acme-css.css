@@ -10,7 +10,7 @@
 
 /* Section 2- General Rules */
 body{
-    background-image: '/acme/images/site/background.jpg';
+    background-image: "/acme/images/site.background.jpg";
     background-repeat: no-repeat;
     
 }
