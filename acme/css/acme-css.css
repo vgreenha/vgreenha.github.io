@@ -1,0 +1,47 @@
+/*This is the stylesheet for the franklin weather site*/
+/* Table of COntents
+1. Imports
+2. General rules 
+3. Mobile first rulers
+4. Larger Screen rules  */
+
+
+/* Section 1- Imports */
+
+/* Section 2- General Rules*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* stops background from repeating, and coves entire screen */
+    background-image: url('/acme/images/site/background.jpg');
+    background-image: no-repeat;
+    background-size: cover;
+}
+/* whitebox is background box on index page */
+#whiteBox{
+    background-color:#ffffff;
+}
+nav{
+    /* changes line height */
+    line-height:4em; 
+    /* background color and font color */
+    background-color: #de2226;
+    color: #ffffff;
+}
+ul{
+    /* alows nave to display flex and sideways */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* changes size and bullet points */
+    list-style: none;
+    font-size: 2em;
+}
+
+/* Section 3- Mobile Specific */
+
+/* Section 4- Large Screen Only */
+@media only screen and (min-width:1400px){
+
+
+
+}
