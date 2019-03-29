@@ -20,6 +20,9 @@ body{
 #whiteBox{
     background-color:#ffffff;
 }
+#headerImg{
+    height: 240px;
+}
 nav{
     /* changes line height */
     line-height:4em; 
@@ -35,6 +38,13 @@ ul{
     /* changes size and bullet points */
     list-style: none;
     font-size: 2em;
+}
+#headH1{
+    font-size: 3em;
+}
+footer{
+    border-top: 5px solid black;
+    text-align: center;
 }
 
 /* Section 3- Mobile Specific */
