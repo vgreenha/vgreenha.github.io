@@ -49,11 +49,10 @@ ul{
     width:100%;
 }
 #acmeRockInfo{
-    font-size:2em;
-    float: right;
+    font-size:3em;
     position: absolute;
     z-index: 1000;
-    left:65%;
+    left:60%;
     top: 550px;
     line-height: 30%;
     color:#990033;
@@ -62,8 +61,19 @@ ul{
 #acmeRockInfo h2{
     font-size:2em;
 }
+#modHolders{
+    display: flex;
 
-
+}
+#modOne{
+    display: flex;
+    width:50%;
+    background-color: pink;
+}
+#modTwo{
+    width:50%;
+    background-color: aqua;
+}
 
 footer{
     border-top: 5px solid black;
@@ -74,6 +84,9 @@ footer{
 
 /* Section 4- Large Screen Only */
 @media only screen and (min-width:1400px){
-
+#modHolders{
+    display: flex;
+    
+}
 
 }
