@@ -16,9 +16,11 @@ body{
     background-image: no-repeat;
     background-size: cover;
 }
+
 /* whitebox is background box on index page */
 #whiteBox{
     background-color:#ffffff;
+    margin:50px;
 }
 #headerImg{
     height: 240px;
@@ -42,6 +44,27 @@ ul{
 #headH1{
     font-size: 3em;
 }
+#homeImg{
+    position: relative;
+    width:100%;
+}
+#acmeRockInfo{
+    font-size:2em;
+    float: right;
+    position: absolute;
+    z-index: 1000;
+    left:65%;
+    top: 550px;
+    line-height: 30%;
+    color:#990033;
+
+}
+#acmeRockInfo h2{
+    font-size:2em;
+}
+
+
+
 footer{
     border-top: 5px solid black;
     text-align: center;
@@ -51,7 +74,6 @@ footer{
 
 /* Section 4- Large Screen Only */
 @media only screen and (min-width:1400px){
-
 
 
 }
