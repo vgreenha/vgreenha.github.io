@@ -2,7 +2,7 @@
 <html lang="en-us">
  <head>
   <meta charset="UTF-8">
-  <title id ='pageTitle'> | Acme </title>
+  <title id ='pageTitle'> Home | Acme </title>
   <meta name="Acme Products Page" content="Final Project for Wed FrontEnd Development Class.">
   <meta name="viewport" content="width=device-width, initial-scale=.43">
   <link  href='/acme/css/acme-css.css' rel='stylesheet' type="text/css" media="screen">
@@ -13,8 +13,8 @@
             <img id='headerImg' src='/acme/images/site/logo.png' alt='Logo with Title and quote at the bottom'>
      </header>
      <nav>
-        <ul>
-            <li>Home</li>
+        <ul id='nava'>
+            <li><button onclick="changeToHome()">HOME</button></li>
             <li>Anvils</li>
             <li>Explosives</li>
             <li>Decoys</li>
@@ -22,6 +22,7 @@
         </ul>
      </nav>
      <main>
+         <div id='mainContent' class=''>
         <h1 id='headH1'>Welcome to Acme!</h1>
         <section id= 'fullSpan'>
         <img id='homeImg' src='/acme/images/site/feature.jpg' alt='Feature Img'>
@@ -36,12 +37,40 @@
         </section>
         <div id='modHolders'>
         <section id='modOne'>
-            <p>Mod One</p>
+            <div id="modOneContent">
+                <h2 id='acmeRockRev'>Acme Rocket Reviews</h2>
+                <ul id='review'>
+                    <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+                    <li>"That thing was fast!" (4/5)</li>
+                    <li>"Talk about fast delivery." (5/5)</li>
+                    <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+                    <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+                  </ul>
+            </div>
         </section>
         <section id='modTwo'>
-            <p>Mod two</p>
+            <h2 id='acmeRockDish'>Featured Recipies</h2>
+            <div id='dishes'>
+            <figure>
+                <img src='/acme/images/recipes/bbqsand.jpg' alt='BBQ sandwich'>
+                <figcaption>Pulled Roadrunner BBQ</figcaption>
+            </figure>
+            <figure>
+                <img src='/acme/images/recipes/potpie.jpg' alt='Roadrunner Pot Pie'>
+                <figcaption>Roadrunner Pot Pie</figcaption>
+            </figure>
+            <figure>
+                <img src='/acme/images/recipes/soup.jpg' alt='Soup image'>
+                <figcaption>Roadrunner Soup</figcaption>
+            </figure>
+            <figure>
+                <img src='/acme/images/recipes/taco.jpg' alt='Taco Image'>
+                <figcaption>Roaadrunner Taco</figcaption>
+            </figure>
+        </div>
         </section>
     </div>
+</div>
      </main>
  
  <footer>
@@ -49,6 +78,7 @@
         <p>All Images used are believed to be in "fair Uese'. Please Notify the author if any are not and they will be removed</p>
  </footer>
 </div>
+<script src='/acme/js/acme.js'></script>
 </body>
  </html>
 

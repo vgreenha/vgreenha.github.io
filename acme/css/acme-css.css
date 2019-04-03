@@ -32,7 +32,7 @@ nav{
     background-color: #de2226;
     color: #ffffff;
 }
-ul{
+#nava{
     /* alows nave to display flex and sideways */
     display:flex;
     flex-direction: row;
@@ -49,30 +49,52 @@ ul{
     width:100%;
 }
 #acmeRockInfo{
-    font-size:3em;
+    font-size:1em;
     position: absolute;
     z-index: 1000;
-    left:60%;
+    left:50%;
     top: 550px;
-    line-height: 30%;
+    line-height: 10%;
     color:#990033;
+    flex-wrap: nowrap;
 
 }
 #acmeRockInfo h2{
     font-size:2em;
+    
 }
-#modHolders{
-    display: flex;
+
+#modOne{
+    /* display: flex; */
+    /* width:50%; */
+    /* background-color: pink; */
 
 }
-#modOne{
-    display: flex;
-    width:50%;
-    background-color: pink;
+#acmeRockRev h2{
+    font-size:2em;
+    
 }
 #modTwo{
+    /* width:50%; */
+    /* background-color: aqua; */
+
+}
+#dishes{
+    display: flex;
+    flex-wrap: wrap;
+}
+figure{
+    width: 30%;
+    margin: 20px;
+}
+figure img{
+    border-color: #808080;
+    border-style: solid;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
     width:50%;
-    background-color: aqua;
 }
 
 footer{
@@ -87,6 +109,39 @@ footer{
 #modHolders{
     display: flex;
     
+}
+#acmeRockInfo{
+    font-size:3em;
+    line-height: 31%;
+    
+}
+#acmeRockDish{
+    font-size: 3em;
+}
+#acmeRockRev{
+    font-size: 3em;
+ 
+}
+
+#modHolders{
+    display: flex;
+    flex-direction:row-reverse;
+
+}
+#modOne{
+    display: flex;
+    width:50%;
+    
+}
+#modOneContent li{
+    font-size:2em;
+}
+#modTwo{
+    width:50%;
+    
+}
+figure img{
+    width:80%;
 }
 
 }
