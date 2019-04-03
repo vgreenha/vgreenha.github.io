@@ -28,6 +28,11 @@ fetch(URL)
    storage.setItem('Name', data.Anvils.name);
    storage.setItem('AnvilImage', data.Anvils.path);
    storage.setItem('DescriptionAnvil', data.Anvils.description);
+   storage.setItem('Manufacturer', data.Anvils.manufacturer);
+   storage.setItem('Price', data.Anvils.price);
+   storage.setItem('Reviews', data.Anvils.reviews);
+
+   
    
 //    document.getElementById("anvilButton").addEventListener("click", changeToAnvil(), false);
 
@@ -39,4 +44,27 @@ fetch(URL)
  .catch(function(error){
 console.log('There was a fetch problem: ', error.message);
  })
+}
+document.getElementById("homeBu").addEventListener("click", changeToHome);
+document.getElementById("anvilBu").addEventListener("click", changeToAnvil);
+document.getElementById("anvilBu").addEventListener("click", changeToAnvil);
+document.getElementById("exploBu").addEventListener("click", changeToExplosive);
+document.getElementById("decoyBu").addEventListener("click", changeToDecoys);
+document.getElementById("trapBu").addEventListener("click", changeToTraps);
+
+
+function changeToHome(){
+    mainContent.setAttribute('class','');
+}
+function changeToAnvil(){
+    mainContent.setAttribute('class','hide');
+}
+function changeToExplosive(){
+    mainContent.setAttribute('class','hide');
+}
+function changeToDecoys(){
+    mainContent.setAttribute('class','hide');
+}
+function changeToTraps(){
+    mainContent.setAttribute('class','hide');
 }
