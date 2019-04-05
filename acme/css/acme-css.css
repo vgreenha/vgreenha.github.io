@@ -59,6 +59,21 @@ button {
 #headH1{
     font-size: 3em;
 }
+#fullSpan{
+    background-image: url(/acme/images/site/feature.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 520px;
+    
+}
+#aImg{
+    background-image: url(/acme/images/products/anvil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 520px;
+}
 #homeImg{
     position: relative;
     width:100%;
@@ -116,6 +131,7 @@ footer{
     border-top: 5px solid black;
     text-align: center;
 }
+
 
 /* Section 3- Mobile Specific */
 

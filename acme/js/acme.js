@@ -53,18 +53,5 @@ document.getElementById("decoyBu").addEventListener("click", changeToDecoys);
 document.getElementById("trapBu").addEventListener("click", changeToTraps);
 
 
-function changeToHome(){
-    mainContent.setAttribute('class','');
-}
-function changeToAnvil(){
-    mainContent.setAttribute('class','hide');
-}
-function changeToExplosive(){
-    mainContent.setAttribute('class','hide');
-}
-function changeToDecoys(){
-    mainContent.setAttribute('class','hide');
-}
-function changeToTraps(){
-    mainContent.setAttribute('class','hide');
+
 }
