@@ -1,0 +1,25 @@
+//Final Notes//
+//Taken in class 3/25/19 //
+
+
+Web Project on home page
+	>Video explains what need to happen (video.html)
+	
+	
+	>Acme Project Directions
+	PDF File. SAVED TO GITHUB
+	
+
+	content pages are the anvils, trap, explosives. etc.
+
+
+Inclass Questions:
+	
+	>Video we are to create
+		similar to the intro video just show off your website.
+	>Total Weight Max is 400kb
+		optimize the pictures
+	>Pages
+		You will have a template page, save it as the index.html and all of the
+		other pages are then poppulated using JavaScript.
+		

@@ -16,7 +16,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /* stops background from repeating, and coves entire screen */
     background-image: url('/acme/images/site/background.jpg');
-    background-image: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -117,7 +117,7 @@ footer{
 #price{
     color:#de2226;
     font-size: 4em;
-    font-weight: 750;
+    font-weight: bolder;
 }
 #itemPicture{
     padding: 20px;
