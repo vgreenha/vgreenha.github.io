@@ -80,6 +80,7 @@ function clickHome(){
   //Displays home page
   document.getElementById('mainContent').setAttribute('class', '');
   document.getElementById('item').setAttribute('class', 'hide');
+  document.getElementById('pageTitle').innerHTML = 'Home | Acme Products';
 }
 function navClick(event){
   fetch(URL)
@@ -96,6 +97,7 @@ function navClick(event){
 
       //Set t to data.event's parameter passed from click event (Explosives, Traps, etc)
       let o = data[event.target.myParam];
+      let q =data
       // console.log('You Clicked '+event.taret.myParam);
 //sets classes to item to display other pages
             document.getElementById("itemHeader").innerHTML = o.name;
@@ -104,6 +106,8 @@ function navClick(event){
             document.getElementById("manufacturer").innerHTML = o.manufacturer;
             document.getElementById("stars").innerHTML = o.reviews + "/5 stars";
             document.getElementById("price").innerHTML = "Price: $" + o.price;
+            document.getElementById('pageTitle').innerHTML = o.name +' | Acme Products';
+
     })
   }
 
