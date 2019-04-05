@@ -94,6 +94,14 @@ figure img{
     border-bottom-width: 4px;
     width:50%;
 }
+figcaption{
+    color:#0000ee;
+    text-align: center;
+    text-decoration: underline;
+}
+#actionbtn{
+    width:100%
+}
 
 footer{
     border-top: 5px solid black;
@@ -130,11 +138,6 @@ footer{
         display:flex;
         flex-direction: row;
     }
-
-#modHolders{
-    display: flex;
-    
-}
 #acmeRockInfo{
     font-size:3em;
     line-height: 31%;
@@ -153,6 +156,7 @@ footer{
 #modHolders{
     display: flex;
     flex-direction:row-reverse;
+    padding:10px;
 
 }
 #modOne{
