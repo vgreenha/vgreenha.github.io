@@ -45,7 +45,7 @@ nav{
     justify-content: space-around;
     /* changes size and bullet points */
     list-style: none;
-    font-size: 1.5kbem;
+    font-size: 1.5em;
 }
 #headH1{
     font-size: 3em;
