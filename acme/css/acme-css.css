@@ -139,10 +139,10 @@ footer{
         flex-direction: row;
     }
 #acmeRockInfo{
-    font-size:3em;
+    font-size:2.5em;
     line-height: 31%;
     left:50%;
-    top:40%;
+    top:50%;
 
 }
 #acmeRockDish{
