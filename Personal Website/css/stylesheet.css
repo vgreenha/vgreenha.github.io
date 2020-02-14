@@ -1,0 +1,249 @@
+/*This is the stylesheet for My portfolio site*/
+/* Table of Contents
+1. Imports
+2. General rules 
+3. Mobile first rulers
+4. Larger Screen rules  */
+
+.colorstowork{
+color: #BBE5ED;
+color:#B287A3;
+color:#FBFCFF;
+color:#424874;
+color: #FF778B;
+}
+
+.fontsToUse{
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Lemonada', cursive;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Oswald', sans-serif; /*  body   */
+    font-family: 'Caveat Brush', cursive; /*  Heading   */
+}
+/* Section 1- Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Lemonada|Noto+Serif+JP|Roboto+Mono&display=swap');
+
+/* Section 2- General Rules*/
+
+body{
+    background-image: url("../Images/marble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #424874;
+    font-family: 'Oswald', sans-serif;
+}
+main{
+    width:80%;
+    margin: auto;
+
+   
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+header h1{
+    color:#424874;
+    font-size: 4em;
+    margin:15px 15px 15px 0px;
+    font-family: 'Caveat Brush', cursive;
+    width: 20%;
+}
+.highlight{
+    
+    color:#FF778B;
+}
+nav{
+    width:80%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    margin-left:20px;
+    text-decoration: none;
+     
+}
+nav li{
+    font-size: 3em;
+    color:#424874;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+nav a:visited{
+    color:#424874;
+}
+nav a:hover{
+color: #B287A3;
+}
+nav a:active{
+    color: #BBE5ED;
+font-size: .85em;
+}
+
+
+
+div section{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px 15px 0px;
+}
+.inside{
+    flex-direction: column;
+    width:35%;
+    height: 100%;
+    margin: 100px;
+}
+.inside p{
+    text-align: center;
+}
+section img{
+    width:40%;
+    height: auto;
+    margin:20px;
+    margin-left: 12%;
+}
+section p.reasons{
+    color: #FBFCFF;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3em;
+
+}section a img {
+    width:80%;
+    height: auto;
+    margin:20px;
+    margin-left: 25%;
+}
+.oddfig{
+    margin-left: -12.5%;
+    margin-right: 15%;
+    border-radius: 0px 50px 50px 0px;
+    align-items: center;
+}
+.evenfig{
+    margin-right: -12.5%;
+    border-radius: 50px 0px 0px 50px;
+    align-items: center;
+    margin-left: 15%;
+}
+#fig1{
+    background-color: #BBE5ED;
+    margin-bottom: 50px;
+    margin-top:50px;
+    box-shadow: 10px 10px 30px #333;
+}
+.left{
+    width: 80%;
+    height: auto;
+    margin:20px;
+    margin-right: 25%;
+}
+
+
+.pro{
+    font-size: 2.5em;
+    font-family: 'Caveat Brush', cursive;
+}
+.brai{
+    font-size:2.5em;
+    font-family: 'Oswald', sans-serif;
+}
+.prime{
+    font-size:2em;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.old{
+    font-size:3em;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+/**************************************************** CSS for the Pages****************************************************88 */
+.imagestogether{
+    display:flex;
+    justify-content: space-around;
+}
+
+.imagestogether img{
+    margin:15px;
+}
+figcaption{
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Caveat Brush', cursive; /*  Heading   */
+}
+
+.fontcover{
+    margin-right:-12.5%;
+    margin-left:-12.5%;
+
+}
+p.feature{
+    color:#424874;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+
+}
+
+
+#skillimg{
+    width:50%;
+    height:500px;
+    background-color: black;
+    margin: 15px;
+    margin-right: 12%;
+}
+
+
+
+footer{
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 50px;
+    font-size: .4em;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    margin-left:20px;
+    text-decoration: none;
+     
+}
+footer nav{
+    width: 100%;
+    background-color: #424874;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:15px;
+
+}
+
+footer nav a:hover{
+color: #B287A3;
+}
+footer nav a:active{
+    color: #BBE5ED;
+font-size: .85em;
+}
+footer nav a:visited{
+    color:#FBFCFF;
+}
+footer p{
+    font-size: 2em;
+}
